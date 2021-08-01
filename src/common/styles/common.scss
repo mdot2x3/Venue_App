@@ -1,0 +1,32 @@
+@import './transition.scss';
+@import './colors';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box; 
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box; 
+  font-family: 'Lato','Roboto', sans-serif;
+}
+h1{
+  margin: 0px 0px 30px;
+}
+
+.button{
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 15px;
+  border: 0px solid black;
+  border-radius: 2px;
+  font-size: 16px;
+  outline:none;
+  cursor: pointer;
+
+  &:hover{
+    box-shadow: inset 0px 0px 250px 0px rgba(0,0,0,.15);
+  }
+  &:active{
+    box-shadow: inset 0px 0px 250px 0px rgba(0,0,0,.3);
+  }
+}

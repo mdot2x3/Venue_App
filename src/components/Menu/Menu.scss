@@ -1,0 +1,36 @@
+@import '../../common/styles/colors';
+
+.menu{
+  section {
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    .view-live-menu{
+      font-size: 20px;
+      height: 60px;
+      line-height: 60px;
+      background-color: $color-secondary;
+      color: #FFF;
+      width: 100%;
+    }
+  }
+
+  .new-category{
+    color: #FFF;
+    height: 50px;
+    text-align: left;
+    padding: 15px;
+    font-size: 16px;
+    background-color: $color-secondary;
+    border: 1px solid rgba(0,0,0,.5);
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    &:hover{
+      box-shadow: inset 0px 0px 250px 0px rgba(0,0,0,.1);
+    }
+    &:active{
+      box-shadow: inset 0px 0px 250px 0px rgba(0,0,0,.2);
+    }
+  }
+}

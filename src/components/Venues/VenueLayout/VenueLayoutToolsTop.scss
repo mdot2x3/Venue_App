@@ -1,0 +1,42 @@
+@import '../../../common/styles/colors';
+
+.venue-layout-tools-top{
+  padding: 0px;
+  overflow: hidden;
+  position: relative;
+  height: 0px;
+  width: 100%;
+  background-color: $color-background-gray;
+  z-index: 25;  
+  display: flex;
+  justify-content: space-between;
+
+  &.display{
+    height: 60px;
+    padding: 10px;
+  }
+
+  .size-ratio{
+    display: none;
+    input[type=number]{
+      width: 80px;
+    }
+    &.display{
+      display: block;
+    }
+  }
+
+  .buttons-left{
+    display: block;
+    &.display{
+      display: none;
+    }
+  }
+    
+  .buttons-right{
+    .editing,.close{
+      margin: 0px 10px;
+    }
+  }
+  
+}

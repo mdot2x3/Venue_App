@@ -1,0 +1,43 @@
+.menu-item-list-item{
+  background-color: #FFF;
+  margin: 15px 0px;
+  list-style: none;
+  .menu-item-list-item-container{
+    border-radius: 2px;
+    border: 1px solid #888;
+    display: flex;
+    
+    .body{
+      cursor: pointer;
+      flex: 1;
+      height: 50px;
+      line-height: 50px;
+      padding: 0px 15px;
+      &:hover{
+        box-shadow: inset 0px 0px 250px 0px rgba(0,0,0,.1);
+      }
+      &:active{
+        box-shadow: inset 0px 0px 250px 0px rgba(0,0,0,.2);
+      }
+    }
+  
+    .edit,.reorder{
+      cursor: pointer;
+      height: 50px;
+      width: 50px;
+      background-image: url('../../assets/pencil-dark.svg');
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 24px;
+      &:hover{
+        box-shadow: inset 0px 0px 250px 0px rgba(0,0,0,.1);
+      }
+      &:active{
+        box-shadow: inset 0px 0px 250px 0px rgba(0,0,0,.2);
+      }
+    }
+    .reorder{
+      background-image: url('../../assets/reorder-dark.svg');
+    }
+  }
+}
